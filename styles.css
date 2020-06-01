@@ -31,12 +31,27 @@ body {
 }
 
 .home {
-  margin-left: 160px; /* Same as the width of the sidenav */
+  margin-left: 160px;/* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
 
+p.home {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-70%) translateY(-300%);
+    text-align: center;
+}
+
+/*p.home {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}*/
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
+
