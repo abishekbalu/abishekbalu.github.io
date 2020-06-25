@@ -16,6 +16,8 @@
 body, html {
     font-family: "Lato", sans-serif;
     height: 100%;
+    background-image: url("Images/images.jpeg");
+    color: white;
 }
 
 .sidenav {
@@ -25,16 +27,17 @@ body, html {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #ffffff;
+  background-color: black;
   overflow-x: visible;
   padding-top: 20px;
+  line-height: 2em;
 }
 
 .sidenav a {
-    padding: 6px 8px 6px 16px;
+  padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 18px;
+  color: white;
   display: block;
 }
 
@@ -42,37 +45,226 @@ body, html {
   color: #f1f1f1;
 }
 
+.Abishek {
+    color: deepskyblue;
+    line-height: 1.5em;
+}
+
+h1 span {
+    width: 100%;
+    padding: 20px;
+    display: block;
+    font-size: 36px;
+    background-color: deepskyblue;
+    background-size: auto;
+}
+
+#home {
+    height: 700px;
+}
+
 .home {
-  margin-left: 160px;/* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-  height: 100%;
+    margin-left: 160px;
+    font-size: 42px;
+    padding: 0px 10px;
+    height: 100%;
 }
 
 p.home {
     position: absolute;
-    text-align: center;
-    left: 50%;
+    left: 40%;
     top: 50%;
-    transform: translateX(-70%) translateY(-10%);
+    transform: translateX(-40%) translateY(-10%);
 
 }
 
 .about {
+    margin-left: 160px;
+    font-size: 28px;
+    padding: 0px 10px;
+    height: 100%;
+    text-align: justify;
+} 
 
+.education {
+    margin-left: 160px;
+    font-size: 28px;
     height: 100%;
 }
 
+.experience {
+    margin-left: 160px;
+    font-size: 28px;
+    padding: 0px 10px;
+    height: 100%;
+
+}
+
+.destination {
+    text-align: left;
+    color: black;
+    padding: 1px, 1px;
+    font-size: 20px;
+    text-transform: initial;
+}
+
+.education-card {
+    display: inline-block;
+    width: 1000px;
+    height: auto;
+    padding: 10px;
+    text-align: left;
+    text-transform: capitalize;
+    background-color: white;
+    color: black;
+}
+
+.skills {
+    margin-left: 160px;
+    font-size: 20px;
+    padding: 0px 10px;
+    height: 100%;
+}
+
+.projects {
+    margin-left: 160px;
+    font-size: 20px;
+    padding: 0px 10px;
+    height: 100%;
+}
+
+.card-position {
+    display: block;
+    text-align: center;
+}
+
+.card{
+    display: inline-block;
+    width: 1000px;
+    height: auto;
+    padding: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+}
+
+.experience-card {
+    display: inline-block;
+    width: 1000px;
+    height: auto;
+    padding: 10px;
+    text-align: left;
+    font-size: 22px;
+    text-transform: capitalize;
+    background: white;
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+     }
+
+h3.card {
+    font-size: 20px;
+    padding: 0px;
+}
+
+.column {
+
+    float: left;
+    width: 16.66%;
+    padding: 0px 10px;
+
+}
+
+.row {
+
+    padding: 10px;
+}
+
+.row:after {
+    content:"";
+    display: table;
+    clear: both;
+    padding-top: 20px;
+
+}
+
+.card-content {
+    width: 110%;
+    vertical-align: middle;
+
+}
 
 
-/*p.home {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-}*/
+.container {
+    margin: auto;
+    padding-right: 10px;
+    font-size: 16px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+img.card-content {
+    background: transparent;
+    opacity: 100%;
+}
+
+.alignleft{
+    float: left;
+}
+
+.alignright {
+    float:right;
+}
+
+.project-duration {
+    text-align: right;
+    font-size: 18px;
+    color: peru;
+    padding-top: 30px;
+    text-transform: capitalize;
+}
+
+.duration {
+    text-align: right;
+    font-size: 18px;
+    color: peru;
+    padding-top: 30px;
+    text-transform: capitalize;
+
+}
+
+
+.project-content {
+    color: black;
+    padding: 0 20px;
+    font-size: 16px;
+    text-transform: initial;
+
+}
+
+.footer {
+    display: inline-block;
+    width: 1000px;
+    height: 60px;
+    padding: 20px;
+    text-align: left;
+    background-color: lightgray;
+    text-transform: capitalize;
+    color: black;
+}
+
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 
+
+@media screen and (max-height: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      }
+  }
