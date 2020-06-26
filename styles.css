@@ -16,8 +16,9 @@
 body, html {
     font-family: "Lato", sans-serif;
     height: 100%;
-    background-image: url("Images/images.jpeg");
-    color: white;
+    background-image: url("Images/bg3.png");
+    background-image-opacity: 0.6;
+    color: black;
 }
 
 .sidenav {
@@ -57,34 +58,74 @@ h1 span {
     font-size: 36px;
     background-color: deepskyblue;
     background-size: auto;
+    color: white;
+    text-transform: capitalize;
 }
 
 #home {
-    height: 700px;
+    width: auto;
+    height: 690px;
+    background-image: url("Images/Abishek-1.png");
+    background-size: 800px 650px;
+    background-repeat: no-repeat;
+    background-position: left
+
 }
 
 .home {
     margin-left: 160px;
-    font-size: 42px;
+    font-size: 38px;
     padding: 0px 10px;
     height: 100%;
 }
 
+p.position {
+    position: absolute;
+    left: 65%;
+    top: 70%;
+    transform: translateX(-20%) translateY(-10%);
+}
+
 p.home {
     position: absolute;
-    left: 40%;
+    left: 50%;
     top: 50%;
-    transform: translateX(-40%) translateY(-10%);
+    transform: translateX(-20%) translateY(-10%);
 
 }
 
 .about {
     margin-left: 160px;
-    font-size: 28px;
+    font-size: 24px;
     padding: 0px 10px;
     height: 100%;
     text-align: justify;
-} 
+}
+
+blockquote {
+
+    border-left: #f9f9f9;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+    color: maroon;
+
+}
+
+blockquote:before {
+
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+
+}
+
+blockquote p {
+    display: inline;
+}
 
 .education {
     margin-left: 160px;
@@ -98,6 +139,27 @@ p.home {
     padding: 0px 10px;
     height: 100%;
 
+}
+
+.honors {
+    margin-left: 160px;
+    font-size: 28px;
+    padding: 0px 10px;
+    height: 100%;
+}
+
+.volunteer {
+    margin-left: 160px;
+    font-size: 28px;
+    padding: 0px 10px;
+    height: 100%;
+}
+.contact {
+    margin-left: 160px;
+    font-size: 22px;
+    padding: 0px 10px;
+    height: 100%;
+    color: white;
 }
 
 .destination {
@@ -116,6 +178,23 @@ p.home {
     text-align: left;
     text-transform: capitalize;
     background-color: white;
+    color: black;
+}
+
+.grid-honors {;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+
+}
+
+.grid-content {
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 16px;
+    text-align: left;
     color: black;
 }
 
@@ -148,6 +227,7 @@ p.home {
     background-color: white;
     color: black;
 }
+
 
 .experience-card {
     display: inline-block;
@@ -200,7 +280,7 @@ h3.card {
 
 .container {
     margin: auto;
-    padding-right: 10px;
+    padding-right: 25px;
     font-size: 16px;
     text-transform: capitalize;
     text-align: center;
@@ -209,6 +289,7 @@ h3.card {
 img.card-content {
     background: transparent;
     opacity: 100%;
+    
 }
 
 .alignleft{
@@ -236,6 +317,14 @@ img.card-content {
 
 }
 
+.volunteer-duration {
+    text-align: right;
+    font-size: 18px;
+    color: peru;
+    padding-top: 30px;
+    text-transform: initial;
+}
+
 
 .project-content {
     color: black;
@@ -251,9 +340,19 @@ img.card-content {
     height: 60px;
     padding: 20px;
     text-align: left;
-    background-color: lightgray;
+    background-color: darkgray;
     text-transform: capitalize;
     color: black;
+}
+
+.content {
+
+    color: black;
+    font-size: 28px;
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 20px;
+
 }
 
 
