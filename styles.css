@@ -64,7 +64,7 @@ h1 span {
 
 #home {
     width: auto;
-    height: 690px;
+    height: 100%;
     background-image: url("Images/Abishek-1.png");
     background-size: 800px 650px;
     background-repeat: no-repeat;
