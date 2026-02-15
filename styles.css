@@ -21,29 +21,36 @@ body, html {
     color: black;
 }
 
-.sidenav {
-    height: 100%;
-  width: 160px;
+.nav {
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.8);
   position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: black;
-  overflow-x: visible;
-  padding-top: 20px;
-  line-height: 2em;
+  width: 99%;
+  display: flex;
 }
 
-.sidenav a {
-  padding: 6px 8px 6px 16px;
+.nav hr {
+  color: white;
+}
+
+.nav a {
+  padding: 20px 16px;
   text-decoration: none;
   font-size: 18px;
-  color: white;
+  color: rgba(255,255,255);
   display: block;
+  float: left;
+  text-align: center;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+.nav a:hover {
+  color: deepskyblue;
+}
+
+.nav a.active {
+  background-color: rgba(255,255,255);
+  color: deepskyblue;
+  font-size: 20px;
 }
 
 .Abishek {
@@ -199,8 +206,8 @@ blockquote p {
 
 .education-card {
     display: inline-block;
-    width: 1000px;
-    height: auto;
+    width: 600px;
+    height: 150px;
     padding: 10px;
     text-align: left;
     text-transform: capitalize;
@@ -208,7 +215,7 @@ blockquote p {
     color: black;
 }
 
-.grid-honors {;
+.grid-honors {
     display: grid;
     grid-column-gap: 20px;
     grid-template-columns: auto auto auto;
@@ -363,10 +370,10 @@ img.card-content {
 
 .footer {
     display: inline-block;
-    width: 1000px;
+    width: 600px;
     height: 60px;
-    padding: 20px;
     text-align: left;
+    margin: 0;
     background-color: darkgray;
     text-transform: capitalize;
     color: black;
@@ -382,15 +389,51 @@ img.card-content {
 
 }
 
+.test-card-position {
+    display: block;
+    text-align: center;
+    margin: 70px 400px 70px 400px;
+}
+
+.test-education-card {
+    display: block;
+    width: 600px;
+    height: 150px;
+    padding: 10px;
+    text-align: left;
+    text-transform: capitalize;
+    background-color: white;
+    color: black;
+}
+
+.test-project-duration {
+    text-align: right;
+    color: peru;
+    text-transform: capitalize;
+    font-size: 18px;
+    padding-top: 30px;
+}
+
+.test-footer {
+    display: block;
+    width: 600px;
+    height: 60px;
+    background-color: darkgrey;
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 16px;
+}
+
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-
+  .nav {padding-top: 15px;}
+  .nav a {font-size: 18px;}
+}
 
 @media screen and (max-height: 600px) {
     .column {
       width: 100%;
       display: block;
       }
-  }
+}
