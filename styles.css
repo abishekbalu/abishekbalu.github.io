@@ -16,9 +16,8 @@
 body, html {
     font-family: "Lato", sans-serif;
     height: 100%;
-    background-image: url("Images/bg3.png");
-    background-image-opacity: 0.6;
-    color: black;
+    background-color: rgba(40,40,43);
+    color: white;
 }
 
 .nav {
@@ -52,6 +51,175 @@ body, html {
   color: deepskyblue;
   font-size: 20px;
 }
+
+.nav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .nav a:not(:first-child) {display: none;}
+  .nav a.icon {
+    float: right;
+    display: block;
+  }
+  
+  .nav.responsive {
+    position: absolute;
+    top: 0;
+    left: -60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 60%;
+    height: 100vh;
+    padding: 20% 0;
+    background: white;
+    transition: all 0.5s ease-in;
+  }
+  /*.nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }*/
+  .nav.responsive a {
+    float: center;
+    display: flex;
+    text-align: left;
+  }
+}
+
+/*
+nav {
+  padding: 5px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 95%;
+  font-weight: 400;
+  padding: 4px 8px;
+}
+
+.linedNav {
+  display: none;
+  cursor: pointer;
+ }
+
+.linedNav .line {
+  width: 25px;
+  height: 1px;
+  background-color: white;
+  display: block;
+  margin: 7px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.linedNav-active {
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.6s;
+  transform: rotate(45 deg);
+}*/
+/*
+.linedNav-active .line:nth-child(2) {
+  width: 0px;
+}
+
+.linedNav-active .line:nth-child(1),
+.linedNav-active .line:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.linedNav-active .line:nth-child(1) {
+  transform: translateY(12px);
+}
+
+.linedNav-active .line:nth-child(3) {
+  transform: translateY(-5px) rotate(90deg);
+}
+*/
+/*
+.menubar {
+  position: absolute;
+  top: 0;
+  left: -60%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60%;
+  height: 100vh;
+  padding: 20% 0;
+  background: white;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+}*/
+/*
+.menubar {
+  position: absolute;
+  top: -100%;
+  bottom: -100%;
+  left: 0;
+  float: none;
+  display: block;
+  align-items: flex-start;
+  color: black;
+  text-align: center;
+  padding: 20% 0;
+  text-decoration: none;
+  font-size: 17px;
+}
+.active {
+  left: 0;
+  bottom: 0;
+  top: 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.menubar ul {
+  padding: 0;
+  list-style: none;
+}
+
+.menubar ul li {
+  margin-bottom: 32px;
+}
+
+.menubar ul li a {
+  text-decoration: none;
+  color: black;;
+  font-size: 95%;
+  font-weight: 400;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.menubar ul li a:hover {
+  background-color: #f5f5f5;
+}
+
+@media screen and (max-width: 700px) {
+  .linedNav {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+}
+*/
+
 
 .Abishek {
     color: deepskyblue;
@@ -425,7 +593,7 @@ img.card-content {
     font-size: 16px;
 }
 
-
+/*
 @media screen and (max-height: 450px) {
   .nav {padding-top: 15px;}
   .nav a {font-size: 18px;}
@@ -436,4 +604,4 @@ img.card-content {
       width: 100%;
       display: block;
       }
-}
+}*/

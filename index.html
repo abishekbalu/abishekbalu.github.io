@@ -5,10 +5,58 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-    <div class="nav">
+  <!--
+  <nav>
+    <a href="#home">
+      <div class="Abishek">
+        Abishek Balu Kothandaraman
+        <hr>
+      </div>
+    </a>
+    <ul>
+      <li>
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <a href="#education">Education</a>
+      </li>
+      <li>
+        <a href="#experience">Experience</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+    <div class="linedNav">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
+  </nav>
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <a href="#education">Education</a>
+      </li>
+      <li>
+        <a href="#experience">Experience</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+  -->
+  
+    <div class="nav" id="responsiveNavBar">
         <a href="#home">
             <div class="Abishek">
                 Abishek Balu Kothandaraman
@@ -24,6 +72,10 @@
         <a href="#volunteer">Volunteering</a>
         <a href="#courses">Additional Courses</a>
         <a href="#contact">Contact</a>
+        <a href="#" class="icon" 
+          onclick="responsiveNavBar(); return false;">
+          <i class="fa fa-bars"></i>
+        </a>
     </div>
     <section id="home">
         <div class="home">
@@ -572,7 +624,7 @@
     </section>
 
 
-
+    <script src="script.js"></script>
 </body>
 </html>
 
