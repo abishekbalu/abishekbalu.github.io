@@ -20,6 +20,8 @@ body, html {
     color: white;
 }
 
+/*
+
 .nav {
   overflow: hidden;
   background-color: rgba(0,0,0,0.8);
@@ -59,41 +61,45 @@ body, html {
 @media screen and (max-width: 700px) {
   .nav a:not(:first-child) {display: none;}
   .nav a.icon {
-    float: right;
+    float: left;
     display: block;
   }
   
   .nav.responsive {
-    position: absolute;
-    top: 0;
-    left: -60%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 60%;
-    height: 100vh;
-    padding: 20% 0;
-    background: white;
-    transition: all 0.5s ease-in;
+    position: relative;
+    display: block;
+    background-color: white;
+    color: black;
+    min-width: 160px;
+    z-index: 1;
   }
-  /*.nav.responsive .icon {
+  .nav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
-  }*/
+  }
   .nav.responsive a {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
     float: center;
     display: flex;
-    text-align: left;
+    text-align: center;
+    padding: 20px 10px 20px 10px;
   }
 }
 
-/*
+*/
+
+
 nav {
   padding: 5px 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 
 nav ul {
@@ -132,8 +138,8 @@ nav ul li a {
   transition: all 0.3s ease-in-out;
   transition-delay: 0.6s;
   transform: rotate(45 deg);
-}*/
-/*
+}
+
 .linedNav-active .line:nth-child(2) {
   width: 0px;
 }
@@ -150,7 +156,7 @@ nav ul li a {
 .linedNav-active .line:nth-child(3) {
   transform: translateY(-5px) rotate(90deg);
 }
-*/
+
 /*
 .menubar {
   position: absolute;
@@ -166,25 +172,26 @@ nav ul li a {
   transition: all 0.5s ease-in;
   z-index: 1;
 }*/
-/*
+
 .menubar {
   position: absolute;
-  top: -100%;
-  bottom: -100%;
-  left: 0;
-  float: none;
-  display: block;
+  top: 5%;
+  left: -60%;
+  justify-content: center;
   align-items: flex-start;
-  color: black;
-  text-align: center;
-  padding: 20% 0;
+  color: white;
+  width: 30%;
+  height: 50vh;
+  padding: 0 5% 10% 2%;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
+  display: flex;
+  transition: all 0.5s ease-in;
+  z-index: 2;
 }
 .active {
   left: 0;
-  bottom: 0;
-  top: 0;
+  display: flex;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -199,10 +206,10 @@ nav ul li a {
 
 .menubar ul li a {
   text-decoration: none;
-  color: black;;
+  color: white;
   font-size: 95%;
   font-weight: 400;
-  padding: 5px 10px;
+  padding: 20px 10px;
   border-radius: 5px;
 }
 
@@ -218,7 +225,7 @@ nav ul li a {
     display: none;
   }
 }
-*/
+
 
 
 .Abishek {
