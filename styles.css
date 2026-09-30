@@ -20,86 +20,13 @@ body, html {
     color: white;
 }
 
-/*
-
-.nav {
-  overflow: hidden;
-  background-color: rgba(0,0,0,0.8);
-  position: fixed;
-  width: 99%;
-  display: flex;
-}
-
-.nav hr {
-  color: white;
-}
-
-.nav a {
-  padding: 20px 16px;
-  text-decoration: none;
-  font-size: 18px;
-  color: rgba(255,255,255);
-  display: block;
-  float: left;
-  text-align: center;
-}
-
-.nav a:hover {
-  color: deepskyblue;
-}
-
-.nav a.active {
-  background-color: rgba(255,255,255);
-  color: deepskyblue;
-  font-size: 20px;
-}
-
-.nav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 700px) {
-  .nav a:not(:first-child) {display: none;}
-  .nav a.icon {
-    float: left;
-    display: block;
-  }
-  
-  .nav.responsive {
-    position: relative;
-    display: block;
-    background-color: white;
-    color: black;
-    min-width: 160px;
-    z-index: 1;
-  }
-  .nav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .nav.responsive a {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    background-color: black;
-    color: white;
-    float: center;
-    display: flex;
-    text-align: center;
-    padding: 20px 10px 20px 10px;
-  }
-}
-
-*/
-
-
 nav {
   padding: 5px 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1;
+  background-color: rgba(40, 40, 43);
 }
 
 nav ul {
@@ -157,22 +84,6 @@ nav ul li a {
   transform: translateY(-5px) rotate(90deg);
 }
 
-/*
-.menubar {
-  position: absolute;
-  top: 0;
-  left: -60%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 60%;
-  height: 100vh;
-  padding: 20% 0;
-  background: white;
-  transition: all 0.5s ease-in;
-  z-index: 1;
-}*/
-
 .menubar {
   position: absolute;
   top: 5%;
@@ -188,6 +99,7 @@ nav ul li a {
   display: flex;
   transition: all 0.5s ease-in;
   z-index: 2;
+  background-color: blue;
 }
 .active {
   left: 0;
@@ -231,6 +143,7 @@ nav ul li a {
 .Abishek {
     color: deepskyblue;
     line-height: 1.5em;
+    text-decoration: none;
 }
 
 h1 span {
@@ -244,36 +157,39 @@ h1 span {
     text-transform: capitalize;
 }
 
-#home {
+#homePage {
     width: auto;
     height: 100%;
-    background-image: url("Images/Abishek-1.png");
-    background-size: 800px 650px;
-    background-repeat: no-repeat;
-    background-position: left
-
 }
 
 .home {
-    margin-left: 160px;
-    font-size: 38px;
+    display: block;
+    justify-content: space-between;
+    align-items: left;
+    margin: 2% 5%;
     padding: 0px 10px;
-    height: 100%;
 }
 
-p.position {
-    position: absolute;
-    left: 65%;
-    top: 70%;
-    transform: translateX(-20%) translateY(-10%);
+.home h1 {
+    font-size: 60px;
+    color: deepskyblue;
+    padding-right: 20px;
 }
 
-p.home {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-20%) translateY(-10%);
+.home h3 {
+    font-size: 42px;
+    color: deepskyblue;
+    padding: 20px;
+}
 
+.home img {
+    display: flex;
+    justify-content: center;
+    float: right;
+    margin-left: 15px;
+    align-items: right;
+    width: 600px;
+    height: auto;
 }
 
 .about {
